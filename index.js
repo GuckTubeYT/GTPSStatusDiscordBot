@@ -93,7 +93,7 @@ else
           var color = randomColor();
     isRunning(`${config.exegtps}`, (status) => {
         if (status == true) {
-            if (!fs.existsSync("onlineplayer.txt"))
+            if (!fs.existsSync(config.onlineplayer))
             {
             const f1 = fs.readdirSync(config.player).length
             const f2 = fs.readdirSync(config.world).length
